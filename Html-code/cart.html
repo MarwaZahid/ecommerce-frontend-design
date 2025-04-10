@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style-cart.css">
+  <script src="https://kit.fontawesome.com/cedd1c6be1.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  
+</head>
+<body>
+  <header>
+    
+      <div class="search-logo-menu">
+      <div class="logo">
+          <img src="logo-colored.png" >
+      </div>
+      <div class="details">
+        <ul>
+         <li><figure><i class="fa-solid fa-user" style="color:grey"></i><figcaption>Profile</figcaption></figure></li>
+         <li><figure><i class="fa-solid fa-message" style="color:grey"></i><figcaption>Message</figcaption></figure></li>
+         <li><figure><i class="fa-solid fa-heart" style="color:grey"></i><figcaption>Orders</figcaption> </figure></li>
+         <a href="cart.html">
+         <li><figure><i class="fa-solid fa-cart-shopping" style="color:grey"></i> <figcaption>My cart</figcaption></figure></li>
+        </a>
+       </ul>
+     </div>
+ </div>
+  </header>
+  <div class="cart-container">
+  
+  <div id="cart-container">
+    <h1>My Cart</h1>
+  <div class="cart-items" id="cart-container"><button onclick="index3.html">Go to Store</button></div></div>
+
+  <!-- Summary Panel -->
+  <div class="summary">
+    <div class="c-u">
+    <h3>Have a coupon?</h3>
+    <input type="text" id="couponInput" placeholder="Add coupon">
+    <button onclick="applyCoupon()">Apply</button>
+
+    <div class="line"><span>Subtotal:</span><span id="subtotal">$0.00</span></div>
+    <div class="line discount"><span>Discount:</span><span id="discount">-$0.00</span></div>
+    <div class="line tax"><span>Tax:</span><span id="tax">+$0.00</span></div>
+    <div class="line total"><span>Total:</span><span id="total">$0.00</span></div>
+
+    <button class="checkout-btn">Checkout</button>
+
+    <div class="payment-icons">
+      <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+      <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+      <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
+      <img src="https://img.icons8.com/ios-filled/50/000000/apple-pay.png" alt="Apple Pay">
+    </div>
+  </div>
+</div>
+
+
+</header>
+  <script>
+    function renderCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const container = document.getElementById('cart-container');
+      container.innerHTML = '';
+
+      cart.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.name}">
+          <div class="details">
+            <h3>${item.name}</h3>
+            <p>Price: $${item.price}</p>
+            <p>Quantity: 
+              <button onclick="changeQty(${index}, -1)">-</button>
+              ${item.quantity}
+              <button onclick="changeQty(${index}, 1)">+</button>
+            </p>
+            <p>Total: $${(item.price * item.quantity).toFixed(2)}</p>
+            <button onclick="removeItem(${index})">Remove</button>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    let appliedDiscount = 0;
+
+function renderCart() {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const container = document.getElementById('cart-container');
+  container.innerHTML = '';
+
+  let subtotal = 0;
+
+  if (cart.length === 0) {
+    container.innerHTML = '<p>Your cart is empty.</p>';
+  }
+
+  cart.forEach((item, index) => {
+    subtotal += item.price * item.quantity;
+
+    const div = document.createElement('div');
+    div.className = 'cart-item';
+    div.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <div class="details">
+        <h3>${item.name}</h3>
+        <p>Price: $${item.price}</p>
+        <p>
+          Quantity:
+          <button onclick="changeQty(${index}, -1)">-</button>
+          ${item.quantity}
+          <button onclick="changeQty(${index}, 1)">+</button>
+        </p>
+        <p>Total: <strong>$${(item.price * item.quantity).toFixed(2)}</strong></p>
+        <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+
+  updateSummary(subtotal);
+}
+
+function changeQty(index, change) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart[index].quantity += change;
+  if (cart[index].quantity <= 0) {
+    cart.splice(index, 1);
+  }
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
+}
+
+function removeItem(index) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.splice(index, 1);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
+}
+
+function updateSummary(subtotal) {
+  const discount = appliedDiscount;
+  const tax = subtotal * 0.1;
+  const total = subtotal - discount + tax;
+
+  document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+  document.getElementById('discount').textContent = `-$${discount.toFixed(2)}`;
+  document.getElementById('tax').textContent = `+$${tax.toFixed(2)}`;
+  document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+}
+
+function applyCoupon() {
+  const input = document.getElementById('couponInput').value.trim().toLowerCase();
+  if (input === "save60") {
+    appliedDiscount = 60;
+    alert("Coupon applied: $60 discount!");
+  } else {
+    appliedDiscount = 0;
+    alert("Invalid coupon code");
+  }
+  renderCart();
+}
+
+renderCart();
+  </script>
+</body>
+</html>
