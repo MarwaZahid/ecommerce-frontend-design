@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/cedd1c6be1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="search-logo-menu">
+            <div class="logo">
+                <img src="logo-colored.png" >
+            </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search" name="search">
+                    <a href="#">All Category <i class="fa-solid fa-chevron-down"></i></a>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="details">
+               <ul>
+                <li><figure><i class="fa-solid fa-user" style="color:grey"></i><figcaption>Profile</figcaption></figure></li>
+                <li><figure><i class="fa-solid fa-message" style="color:grey"></i><figcaption>Message</figcaption></figure></li>
+                <li><figure><i class="fa-solid fa-heart" style="color:grey"></i><figcaption>Orders</figcaption> </figure></li>
+                <a href="https://marwazahid.github.io/cart1/">
+                <li><figure><i class="fa-solid fa-cart-shopping" style="color:grey"></i> <figcaption>My cart</figcaption></figure></li>
+               </a>
+              </ul>
+            </div>
+        </div>
+            <nav>
+                 <a href="#">&#9776; All Category</a> 
+                 <a href="#">Hot Offers</a>
+                 <a href="#">Gift Boxes</a>
+                 <a href="#">Projects</a>
+                 <a href="#">Menu Items</a>
+                 <a href="#">Help <i class="fa-solid fa-chevron-down"></i></a>
+                 
+                 <a href="#" class="right-menu">English,USD <i class="fa-solid fa-chevron-down"></i></a>
+                 <a href="#" >Ship to <img src="download.png">  <i class="fa-solid fa-chevron-down"></i></a>
+            </nav> 
+        </header>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Clothings</a></li>
+            <li><a href="#">Men's Wear</a></li>
+            <li>Summer Clothings</li>
+          </ul>
+          
+        <section class="top-info">
+            <p>12,911 items in <b>Mobile accessory</b></p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <p><input type="checkbox" id="check" checked>Verified Only
+           <input type="text" id="feature" placeholder="Featured &nbsp;&nbsp;&nbsp; &nbsp; &#8595;">
+        </p>
+        <p class="grids"><i class="fa-solid fa-table-cells"></i>&nbsp;&nbsp;<a href="#"><i class="fa-solid fa-bars"></a></i></p>
+        </section>
+        <section class="list">
+            <div class="left-col">
+                <div class="side-bar">
+                    <h2>Select Filters</h2>
+                    <div class="filter-section-type">
+                        <h3>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                    <a href="#">Mobile accessory</a>
+                   <a href="#">Electronics</a>
+                   <a href="#">Smartphones</a>
+                   <a href="#">Modern tech</a>
+                   <a href="#"><p>See all</p></a>
+                   </div>
+                   <div class="filter-section-brands">
+                    <h3>Brands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                    <label><input type="checkbox" checked> Sumsang</label><br>
+                    <label><input type="checkbox" checked> Apple</label><br>
+                    <label><input type="checkbox" checked> Huawei</label><br>
+                    <label><input type="checkbox"> Pocco</label><br>
+                    <label><input type="checkbox"> Lenovo</label><br>
+                    <a href="#"><p>See all</p></a>
+                </div>
+                <div class="filter-section-features">
+                    <h3>Features&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                    <label><input type="checkbox" checked> Metallic</label><br>
+                    <label><input type="checkbox"> Plastic Cover</label><br>
+                    <label><input type="checkbox"> 8GB Ram</label><br>
+                    <label><input type="checkbox"> Super Power</label><br>
+                    <label><input type="checkbox"> Large Memory</label><br>
+                    <label><input type="checkbox"> Lightweight</label><br>
+                   <a href="#home"><p>See all</p></a>
+                </div>
+                <div class="filter-section-range">
+                    <h3>Price Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"id="down"></i></h3>
+                   <div class="toggle-section">
+                        <div class="slider-track"></div>    
+                    <div class="slider">
+                          <input type="range" id="minRange" min="0" max="999999" value="0" />
+                          <input type="range" id="maxRange" min="0" max="999999" value="999999" />
+                        </div>
+                        <div class="inputs">
+                          <input type="number" id="minInput" value="0" />
+                          <input type="number" id="maxInput" value="999999" />
+                        </div>
+                        <button onclick="applyPriceFilter()">Apply</button>
+                        </div>
+                      </div>
+                
+                <div class="filter-section-condition">
+                    <h3>Condition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                    <label><input type="radio" name="uo" id="uo2" value="0"> Any</label><br>
+                    <label><input type="radio" name="uo" id="uo2" value="1"> Refurbished</label><br>
+                    <label><input type="radio" name="uo" id="uo2" value="2"> Brand new</label><br>
+                    <label><input type="radio" name="uo" id="uo2" value="3"> Old items</label><br>
+                </div>
+                <div class="filter-section-rating">
+                    <h3>Rating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                    <label><input type="checkbox" validation> ★★★★★</label><br>
+                    <label><input type="checkbox" validation> ★★★★☆</label><br>
+                    <label><input type="checkbox" validation> ★★★☆☆</label><br>
+                    <label><input type="checkbox" validation> ★★☆☆☆</label><br>
+                    <label><input type="checkbox" validation> ★☆☆☆☆</label><br>
+                </div>
+                  </div> 
+                </div>
+            </div>
+        </section>
+        <section class="list-product">
+            <div class="product-img"><img src="1.jpg"></div>
+            <div class="product-info">
+                <p class="name">Canon Camera EOS 2000, Black 10x zoom</p><div class="heart-check"><input type="checkbox" onclick="addToCart('GoPro HERO6 4k Action Camera-black', 99, '1.jpg')"></div>
+                <p class="price">$998.00    <span class="discount"><strike>    $1128.00</strike></span></p>
+                <ul class="product-info-list">
+                    <li><img src="rating.png">   7.5</li>
+                    <li>154 Orders</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <p class="product-info-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut<br> labore et dolore magna aliqua</p>
+                    <button type="submit">More details</button>
+            </div>
+        </section>
+        <section class="list-product">
+            <div class="product-img"><img src="3.jpg"></div>
+            <div class="product-info">
+                <p class="name">GoPro Hero6 4K Action Camera-Black</p><div class="heart-check"><input type="checkbox" onclick="addToCart('GoPro HERO6 4k Action Camera-black', 99, '1.jpg')"></div>
+                <p class="price">$998.00</p>
+                <ul class="product-info-list">
+                    <li><img src="rating.png">   7.5</li>
+                    <li>154 Orders</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <p class="product-info-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut<br> labore et dolore magna aliqua</p>
+                    <button type="submit">More details</button>
+            </div>
+        </section>
+        <section class="list-product">
+            <div class="product-img"><img src="2.jpg"></div>
+            <div class="product-info">
+                <p class="name">Canon Camera EOS 2000, Black 10x zoom</p><div class="heart-check"><input type="checkbox" onclick="addToCart('GoPro HERO6 4k Action Camera-black', 99, '1.jpg')"></div>
+                <p class="price">$998.00</p>
+                <ul class="product-info-list">
+                    <li><img src="rating.png">   7.5</li>
+                    <li>154 Orders</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <p class="product-info-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut<br> labore et dolore magna aliqua</p>
+                    <button type="submit">More details</button>
+            </div>
+        </section>
+        <section class="list-product">
+            <div class="product-img"><img src="7.jpg"></div>
+            <div class="product-info">
+                <p class="name">Canon Camera EOS 2000, Black 10x zoom</p><div class="heart-check"><input type="checkbox" onclick="addToCart('GoPro HERO6 4k Action Camera-black', 99, '1.jpg')"></div>
+                <p class="price">$998.00 </p>
+                <ul class="product-info-list">
+                    <li><img src="rating.png">   7.5</li>
+                    <li>154 Orders</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <p class="product-info-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut<br> labore et dolore magna aliqua</p>
+                    <button type="submit">More details</button>
+            </div>
+        </section>
+        <section class="list-product">
+            <div class="product-img"><img src="8.jpg"></div>
+            <div class="product-info">
+                <p class="name">Canon Camera EOS 2000, Black 10x zoom</p><div class="heart-check"><input type="checkbox" onclick="addToCart('GoPro HERO6 4k Action Camera-black', 99, '1.jpg')"></div>
+                <p class="price">$998.00</p>
+                <ul class="product-info-list">
+                    <li><img src="rating.png">   7.5</li>
+                    <li>154 Orders</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <p class="product-info-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut<br> labore et dolore magna aliqua</p>
+                    <button type="submit">More details</button>
+            </div>
+        </section>
+        <section class="list-product">
+            <div class="product-img"><img src="9.jpg"></div>
+            <div class="product-info">
+                <p class="name">Canon Camera EOS 2000, Black 10x zoom</p><div class="heart-check"><input type="checkbox" onclick="addToCart('GoPro HERO6 4k Action Camera-black', 99, '1.jpg')"></div>
+                <p class="price">$998.00</p>
+                <ul class="product-info-list">
+                    <li><img src="rating.png">   7.5</li>
+                    <li>154 Orders</li>
+                    <li>Free Shipping</li>
+                </ul>
+                <p class="product-info-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut<br> labore et dolore magna aliqua</p>
+                    <button type="submit">More details</button>
+            </div>
+        </section>
+        <div class="pagination">
+            <a href="#">Show 10 <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
+        <section class="Subscribe-box">
+            <h3>Subscribe on our newsletter</h3>
+            <p>Get daily news on upcoming offers form many suppliers all over the world</p>
+            <input type="email" placeholder="&#9993; Email">
+            <button type="submit">Subscribe</button>
+        </section>
+        
+          
+        <footer class="bottom">
+            <div class="footer">
+            <img src="logo-colored.png" class="brand">
+            <p>Best information about the company is here <br>but now lorem ipsum is</p>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook" style="color: #c2c6cc;"></i>
+                <i class="fa-brands fa-square-twitter" style="color: #c2c6cc;"></i>
+                <i class="fa-brands fa-square-instagram" style="color: #c2c6cc;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #c2c6cc;"></i>
+                <i class="fa-brands fa-square-youtube" style="color: #c2c6cc;"></i>
+            </div>
+            </div>
+            <div class="list-info">
+            <ul class="about"><h3>About</h3>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Find Store</li></a>
+                <a href="#"><li>Categories</li></a>
+                <a href="#"><li>Blogs</li></a>
+            </ul>
+            <ul class="partner"><h3>Patnership</h3>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Find Store</li></a>
+                <a href="#"><li>Categories</li></a>
+                <a href="#"><li>Blogs</li></a>
+                
+            </ul>
+            <ul class="contact"><h3>Information</h3>
+            <a href="#"><li>Help Center</li></a>
+            <a href="#"><li>Money Refund</li></a>
+            <a href="#"><li>Shipping</li></a>
+            <a href="#"><li>Contact Us</li></a>
+            </ul>
+            <ul class="user"><h3>For Users</h3>
+            <a href="#"><li>Login</li></a>
+            <a href="#"><li>Register</li></a>
+            <a href="#"><li>Setting</li></a>
+            <a href="#"><li>My Order</li></a>
+            </ul>
+           <ul class="buttons"><h3>Get App</h3>
+           <li><button onclick=""><span class="button-text">Download on the</span> <br><i class="fa-brands fa-apple"></i> App Store</button></li>
+           <li><button onclick=""><span class="button-text"> Get it on </span><br><i class="fa-brands fa-google-play"></i> Google Play</button></li>
+        </ul>
+        </div>
+        </footer>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2023 Ecommerce &ensp; &emsp; &ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp;&ensp; &emsp;<img src="usa1.png"> English <i class="fa-solid fa-chevron-down"></i></p> 
+        </div>
+        <script>
+            const minRange = document.getElementById('minRange');
+            const maxRange = document.getElementById('maxRange');
+            const minInput = document.getElementById('minInput');
+            const maxInput = document.getElementById('maxInput');
+        
+            function syncInputs() {
+              minInput.value = minRange.value;
+              maxInput.value = maxRange.value;
+            }
+        
+            minRange.addEventListener('input', () => {
+              if (parseInt(minRange.value) > parseInt(maxRange.value)) {
+                minRange.value = maxRange.value;
+              }
+              syncInputs();
+            });
+        
+            maxRange.addEventListener('input', () => {
+              if (parseInt(maxRange.value) < parseInt(minRange.value)) {
+                maxRange.value = minRange.value;
+              }
+              syncInputs();
+            });
+        
+            minInput.addEventListener('input', () => {
+              minRange.value = minInput.value;
+            });
+        
+            maxInput.addEventListener('input', () => {
+              maxRange.value = maxInput.value;
+            });
+        
+            function applyPriceFilter() {
+              alert(`Price range: $${minInput.value} - $${maxInput.value}`);
+            }
+        
+            syncInputs(); // initialize on load
+            function addToCart(name, price, image) {
+      const product = { name, price, image, quantity: 1 };
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const existing = cart.find(item => item.name === name);
+      
+        cart.push(product);
+      
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert("Product added to cart!");
+    }
+            </script>
+    </body>
+    </html>
