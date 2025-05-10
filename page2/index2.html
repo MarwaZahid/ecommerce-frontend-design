@@ -21,16 +21,17 @@
             <div class="details">
                <ul>
                 <li><figure><i class="fa-solid fa-user" style="color:grey"></i><figcaption>Profile</figcaption></figure></li>
-                <li><figure><i class="fa-solid fa-message" style="color:grey"></i><figcaption>Message</figcaption></figure></li>
+                <li class="display1"><figure><i class="fa-solid fa-message" style="color:grey"></i><figcaption>Message</figcaption></figure></li>
                 <li><figure><i class="fa-solid fa-heart" style="color:grey"></i><figcaption>Orders</figcaption> </figure></li>
                 <a href="https://marwazahid.github.io/cart1/">
-                <li><figure><i class="fa-solid fa-cart-shopping" style="color:grey"></i> <figcaption>My cart</figcaption></figure></li>
+                <li><figure><i class="fa-solid fa-cart-shopping" style="color:grey"></i> <figcaption>Cart</figcaption></figure></li>
                </a>
               </ul>
             </div>
         </div>
             <nav>
-                 <a href="#">&#9776; All Category</a> 
+                 
+  <a class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776; All Category</a> 
                  <a href="#">Hot Offers</a>
                  <a href="#">Gift Boxes</a>
                  <a href="#">Projects</a>
@@ -41,86 +42,102 @@
                  <a href="#" >Ship to <img src="download.png">  <i class="fa-solid fa-chevron-down"></i></a>
             </nav> 
         </header>
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Product Listing Page</a>
+  <a href="#" class="w3-bar-item w3-button">Product Detailing Page</a>
+</div>
         <ul class="breadcrumb">
             <li><a href="#">Home</a></li>
             <li><a href="#">Clothings</a></li>
             <li><a href="#">Men's Wear</a></li>
             <li>Summer Clothings</li>
           </ul>
-          
+          <div class="top-list"><ul>
+            <a href="#"><li>Tablets</li></a>
+            <a href="#"><li>Phones</li></a>
+            <a href="#"><li>Ipads</li></a>
+            <a href="#" ><li>Iphone</li></a>
+            <a href="javascript:void(0)" class="closebtn" onclick="openNav()"><li>More Category</li></a>
+          </ul></div> 
         <section class="top-info">
-            <p>12,911 items in <b>Mobile accessory</b></p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-            <p><input type="checkbox" id="check" checked>Verified Only
-           <input type="text" id="feature" placeholder="Featured &nbsp;&nbsp;&nbsp; &nbsp; &#8595;">
+            <p>12,911 items in <b>Mobile accessory</b></p>
+            <p class="check"><input type="checkbox" id="check" checked>Verified Only
+         <input type="text" id="feature" placeholder="Featured &nbsp;&nbsp;&nbsp; &nbsp; &#8595;">
         </p>
+        <p><button >Filter</button> </p>
         <p class="grids"><i class="fa-solid fa-table-cells"></i>&nbsp;&nbsp;<a href="#"><i class="fa-solid fa-bars"></a></i></p>
         </section>
+        
         <section class="list">
-            <div class="left-col">
-                <div class="side-bar">
-                    <h2>Select Filters</h2>
-                    <div class="filter-section-type">
-                        <h3>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
-                    <a href="#">Mobile accessory</a>
-                   <a href="#">Electronics</a>
-                   <a href="#">Smartphones</a>
-                   <a href="#">Modern tech</a>
-                   <a href="#"><p>See all</p></a>
-                   </div>
-                   <div class="filter-section-brands">
-                    <h3>Brands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
-                    <label><input type="checkbox" checked> Sumsang</label><br>
-                    <label><input type="checkbox" checked> Apple</label><br>
-                    <label><input type="checkbox" checked> Huawei</label><br>
-                    <label><input type="checkbox"> Pocco</label><br>
-                    <label><input type="checkbox"> Lenovo</label><br>
-                    <a href="#"><p>See all</p></a>
-                </div>
-                <div class="filter-section-features">
-                    <h3>Features&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
-                    <label><input type="checkbox" checked> Metallic</label><br>
-                    <label><input type="checkbox"> Plastic Cover</label><br>
-                    <label><input type="checkbox"> 8GB Ram</label><br>
-                    <label><input type="checkbox"> Super Power</label><br>
-                    <label><input type="checkbox"> Large Memory</label><br>
-                    <label><input type="checkbox"> Lightweight</label><br>
-                   <a href="#home"><p>See all</p></a>
-                </div>
-                <div class="filter-section-range">
-                    <h3>Price Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"id="down"></i></h3>
-                   <div class="toggle-section">
-                        <div class="slider-track"></div>    
-                    <div class="slider">
-                          <input type="range" id="minRange" min="0" max="999999" value="0" />
-                          <input type="range" id="maxRange" min="0" max="999999" value="999999" />
-                        </div>
-                        <div class="inputs">
-                          <input type="number" id="minInput" value="0" />
-                          <input type="number" id="maxInput" value="999999" />
-                        </div>
-                        <button onclick="applyPriceFilter()">Apply</button>
-                        </div>
+          <div class="left-col"  id="sidebar">
+             
+              <div class="sidebar">
+                  <h2> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a></h2>
+                  <h2>Select Filters </h2>
+                  <div class="filter-section-type">
+                      <h3>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                  <a href="#">Mobile accessory</a>
+                 <a href="#">Electronics</a>
+                 <a href="#">Smartphones</a>
+                 <a href="#">Modern tech</a>
+                 <a href="#"><p>See all</p></a>
+                 </div>
+                 <div class="filter-section-brands">
+                  <h3>Brands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                  <label><input type="checkbox" checked> Sumsang</label><br>
+                  <label><input type="checkbox" checked> Apple</label><br>
+                  <label><input type="checkbox" checked> Huawei</label><br>
+                  <label><input type="checkbox"> Pocco</label><br>
+                  <label><input type="checkbox"> Lenovo</label><br>
+                  <a href="#"><p>See all</p></a>
+              </div>
+              <div class="filter-section-features">
+                  <h3>Features&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                  <label><input type="checkbox" checked> Metallic</label><br>
+                  <label><input type="checkbox"> Plastic Cover</label><br>
+                  <label><input type="checkbox"> 8GB Ram</label><br>
+                  <label><input type="checkbox"> Super Power</label><br>
+                  <label><input type="checkbox"> Large Memory</label><br>
+                  <label><input type="checkbox"> Lightweight</label><br>
+                 <a href="#home"><p>See all</p></a>
+              </div>
+              <div class="filter-section-range">
+                  <h3>Price Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"id="down"></i></h3>
+                 <div class="toggle-section">
+                      <div class="slider-track"></div>    
+                  <div class="slider">
+                        <input type="range" id="minRange" min="0" max="999999" value="0" />
+                        <input type="range" id="maxRange" min="0" max="999999" value="999999" />
                       </div>
-                
-                <div class="filter-section-condition">
-                    <h3>Condition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
-                    <label><input type="radio" name="uo" id="uo2" value="0"> Any</label><br>
-                    <label><input type="radio" name="uo" id="uo2" value="1"> Refurbished</label><br>
-                    <label><input type="radio" name="uo" id="uo2" value="2"> Brand new</label><br>
-                    <label><input type="radio" name="uo" id="uo2" value="3"> Old items</label><br>
-                </div>
-                <div class="filter-section-rating">
-                    <h3>Rating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
-                    <label><input type="checkbox" validation> ★★★★★</label><br>
-                    <label><input type="checkbox" validation> ★★★★☆</label><br>
-                    <label><input type="checkbox" validation> ★★★☆☆</label><br>
-                    <label><input type="checkbox" validation> ★★☆☆☆</label><br>
-                    <label><input type="checkbox" validation> ★☆☆☆☆</label><br>
-                </div>
-                  </div> 
-                </div>
-            </div>
-        </section>
+                      <div class="inputs">
+                        <input type="number" id="minInput" value="0" />
+                        <input type="number" id="maxInput" value="999999" />
+                      </div>
+                      <button onclick="applyPriceFilter()">Apply</button>
+                      </div>
+                    </div>
+              
+              <div class="filter-section-condition">
+                  <h3>Condition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                  <label><input type="radio" name="uo" id="uo2" value="0"> Any</label><br>
+                  <label><input type="radio" name="uo" id="uo2" value="1"> Refurbished</label><br>
+                  <label><input type="radio" name="uo" id="uo2" value="2"> Brand new</label><br>
+                  <label><input type="radio" name="uo" id="uo2" value="3"> Old items</label><br>
+              </div>
+              <div class="filter-section-rating">
+                  <h3>Rating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-up"></i></h3>
+                  <label><input type="checkbox" validation> ★★★★★</label><br>
+                  <label><input type="checkbox" validation> ★★★★☆</label><br>
+                  <label><input type="checkbox" validation> ★★★☆☆</label><br>
+                  <label><input type="checkbox" validation> ★★☆☆☆</label><br>
+                  <label><input type="checkbox" validation> ★☆☆☆☆</label><br>
+              </div>
+                </div> 
+              </div>
+          </div>
+      </section>
         <section class="list-product">
             <div class="product-img"><img src="1.jpg"></div>
             <div class="product-info">
@@ -240,39 +257,44 @@
             </div>
             </div>
             <div class="list-info">
-            <ul class="about"><h3>About</h3>
+            <ul class="about">
+                <h3 class="about-head">About</h3>
                 <a href="#"><li>About Us</li></a>
                 <a href="#"><li>Find Store</li></a>
                 <a href="#"><li>Categories</li></a>
                 <a href="#"><li>Blogs</li></a>
             </ul>
-            <ul class="partner"><h3>Patnership</h3>
+            <ul class="partner">
+            <h3 class="partner-head">Patnership</h3>
                 <a href="#"><li>About Us</li></a>
                 <a href="#"><li>Find Store</li></a>
                 <a href="#"><li>Categories</li></a>
                 <a href="#"><li>Blogs</li></a>
                 
             </ul>
-            <ul class="contact"><h3>Information</h3>
+            <ul class="contact">
+            <h3 class="contact-head">Information</h3>
             <a href="#"><li>Help Center</li></a>
             <a href="#"><li>Money Refund</li></a>
             <a href="#"><li>Shipping</li></a>
             <a href="#"><li>Contact Us</li></a>
             </ul>
-            <ul class="user"><h3>For Users</h3>
+            <ul class="user">
+            <h3>For Users</h3>
             <a href="#"><li>Login</li></a>
             <a href="#"><li>Register</li></a>
             <a href="#"><li>Setting</li></a>
             <a href="#"><li>My Order</li></a>
-            </ul>
-           <ul class="buttons"><h3>Get App</h3>
+            </ul><br>
+            <h3 class="buttons-text">Get App</h3>
+           <ul class="buttons">
            <li><button onclick=""><span class="button-text">Download on the</span> <br><i class="fa-brands fa-apple"></i> App Store</button></li>
            <li><button onclick=""><span class="button-text"> Get it on </span><br><i class="fa-brands fa-google-play"></i> Google Play</button></li>
         </ul>
         </div>
         </footer>
         <div class="copyright">
-            <p><i class="fa-regular fa-copyright"></i> 2023 Ecommerce &ensp; &emsp; &ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp;&ensp; &emsp;<img src="usa1.png"> English <i class="fa-solid fa-chevron-down"></i></p> 
+            <p><i class="fa-regular fa-copyright"></i> 2023 Ecommerce <img src="usa1.png" class="flag"> English <i class="fa-solid fa-chevron-down"></i></p> 
         </div>
         <script>
             const minRange = document.getElementById('minRange');
@@ -322,6 +344,19 @@
       localStorage.setItem('cart', JSON.stringify(cart));
       alert("Product added to cart!");
     }
+    function openNav() {
+          document.getElementById("sidebar").style.display = "inline";
+        }
+        function closeNav() {
+          document.getElementById("sidebar").style.display= "none";
+        }
+        function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
             </script>
     </body>
     </html>
