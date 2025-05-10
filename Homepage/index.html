@@ -22,9 +22,9 @@
             <div class="details">
                <ul>
                 <li><figure><i class="fa-solid fa-user" style="color:grey"></i><figcaption>Profile</figcaption></figure></li>
-                <li><figure><i class="fa-solid fa-message" style="color:grey"></i><figcaption>Message</figcaption></figure></li>
+                <li class="display1"><figure><i class="fa-solid fa-message" style="color:grey"></i><figcaption>Message</figcaption></figure></li>
                 <li><figure><i class="fa-solid fa-heart" style="color:grey"></i><figcaption>Orders</figcaption> </figure></li>
-               <a href="https://marwazahid.github.io/cart1/"><li><figure><i class="fa-solid fa-cart-shopping" style="color:grey"></i> <figcaption>My cart</figcaption></figure></li>
+               <a href="https://marwazahid.github.io/cart1/"><li><figure><i class="fa-solid fa-cart-shopping" style="color:grey"></i> <figcaption>cart</figcaption></figure></li>
  </a>              
                </ul>
             </div>
@@ -41,17 +41,22 @@
                  <a href="#" >Ship to <img src="download.png">  <i class="fa-solid fa-chevron-down"></i></a>
             </nav> 
         </header>
-       
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Product Listing Page</a>
+  <a href="#" class="w3-bar-item w3-button">Product Detailing Page</a>
+</div>
         <section class="top">
             <div class="top-list"><ul>
                 <a href="#"><li>Automobiles</li></a>
-                <a href="#"><li>Clothes and wear</li></a>
-                <a href="#"><li>Home interiors</li></a>
-                <a href="#"><li>Computer and tech</li></a>
-                <a href="#"><li>Tools, equipments</li></a>
-                <a href="#"><li>Sports and outdoor</li></a>
-                <a href="#"><li>Animals and pets</li></a>
-                <a href="#"><li>Machinery tools</li></a>
+                <a href="#"><li>Clothes</li></a>
+                <a href="#" class="remove-item"><li>Home interiors</li></a>
+                <a href="#"><li>Tech</li></a>
+                <a href="#" class="remove-item"><li>Tools, equipments</li></a>
+                <a href="#" class="remove-item"><li>Sports and outdoor</li></a>
+                <a href="#" class="remove-item"><li>Animals and pets</li></a>
+                <a href="#" class="remove-item"><li>Machinery tools</li></a>
                 <a href="#"><li>More Category</li></a>
               </ul></div>
             <div class="background-img"><span>Latest trending </span><h3> Electronics items</h3>
@@ -79,7 +84,7 @@
             </div>
     </section> 
         <section class="offers2">
-                <div class="ad"><span>Home and <br>outdoor</span><br><br><button type="button">Source now</button></div>
+                <div class="ad"><span>Home and<br>outdoor</span><br><button type="button">Source now</button></div>
                 <div class="material2">
             <div class="product"><p>Soft chairs<span class="price"><br>from USD 19</span></p><img src="10 (1).jpg"></div>
             <div class="product"><p>Sofa & chair<span class="price"><br>from USD 19</span></p><img src="10 (6).jpg"></div>
@@ -125,11 +130,11 @@
         <figure><img src="11(6).jpg"><span class="prices">$34.00</span><figcaption> Jeans bag for travel <br>for men</figcaption></figure>
         <figure><img src="11(5).jpg"><span class="prices">$99.00</span><figcaption> Leather Wallet</figcaption></figure></div>
         <div class="item-2">
-        <figure><img src="11(4).jpg"><span class="prices">$9.99</span><figcaption>Canon camera black, 100x zoom color, for men</figcaption></figure>
+        <figure><img src="11(3).jpg"><span class="prices">$9.99</span><figcaption>Canon camera black, 100x zoom color, for men</figcaption></figure>
         <figure><img src="9.jpg"><span class="prices">$8.99</span><figcaption>Headset for Gaming <br>with mic</figcaption></figure>
         <figure><img src="11(5).jpg"><span class="prices">$10.30</span><figcaption>Smart watch silver<br>color mordern</figcaption></figure>
         <figure><img src="10 (3).jpg"><span class="prices">$10.30</span><figcaption> Blue wallet for men<br>leather metarfial</figcaption></figure>
-        <figure><img src="10.jpg"><span class="prices">$80.95</span><figcaption> jeans bag for<br>travel men</figcaption></figure>
+        <figure><img src="11.jpg"><span class="prices">$80.95</span><figcaption> jeans bag for<br>travel men</figcaption></figure>
         </div>
     </section>
     <h2 class="extra-services-heading">Our Extra Services</h2>
@@ -163,6 +168,7 @@
         <button type="submit">Subscribe</button>
     </section>
   
+          
         <footer class="bottom">
             <div class="footer">
             <img src="logo-colored.png" class="brand">
@@ -176,44 +182,57 @@
             </div>
             </div>
             <div class="list-info">
-            <ul class="about"><h3>About</h3>
+            <ul class="about">
+                <h3 class="about-head">About</h3>
                 <a href="#"><li>About Us</li></a>
                 <a href="#"><li>Find Store</li></a>
                 <a href="#"><li>Categories</li></a>
                 <a href="#"><li>Blogs</li></a>
             </ul>
-            <ul class="partner"><h3>Patnership</h3>
+            <ul class="partner">
+            <h3 class="partner-head">Patnership</h3>
                 <a href="#"><li>About Us</li></a>
                 <a href="#"><li>Find Store</li></a>
                 <a href="#"><li>Categories</li></a>
                 <a href="#"><li>Blogs</li></a>
                 
             </ul>
-            <ul class="contact"><h3>Information</h3>
+            <ul class="contact">
+            <h3 class="contact-head">Information</h3>
             <a href="#"><li>Help Center</li></a>
             <a href="#"><li>Money Refund</li></a>
             <a href="#"><li>Shipping</li></a>
             <a href="#"><li>Contact Us</li></a>
             </ul>
-            <ul class="user"><h3>For Users</h3>
+            <ul class="user">
+            <h3>For Users</h3>
             <a href="#"><li>Login</li></a>
             <a href="#"><li>Register</li></a>
             <a href="#"><li>Setting</li></a>
             <a href="#"><li>My Order</li></a>
-            </ul>
-           <ul class="buttons"><h3>Get App</h3>
+            </ul><br>
+            <h3 class="buttons-text">Get App</h3>
+           <ul class="buttons">
            <li><button onclick=""><span class="button-text">Download on the</span> <br><i class="fa-brands fa-apple"></i> App Store</button></li>
            <li><button onclick=""><span class="button-text"> Get it on </span><br><i class="fa-brands fa-google-play"></i> Google Play</button></li>
         </ul>
         </div>
-    </footer>
+        </footer>
         <div class="copyright">
-            <p><i class="fa-regular fa-copyright"></i> 2023 Ecommerce &ensp; &emsp; &ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp;&ensp; &emsp; &ensp; &emsp; &ensp; &emsp; &ensp; &emsp;&ensp; &emsp;<img src="usa1.png"> English <i class="fa-solid fa-chevron-down"></i></p> 
+            <p><i class="fa-regular fa-copyright"></i> 2023 Ecommerce <img src="usa1.png" class="flag"> English <i class="fa-solid fa-chevron-down"></i></p> 
         </div>
         <script>
             const refreshHtmlCart = () =>{
                
             }
+            
+        function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
         </script>
     </body>      
 </html>
